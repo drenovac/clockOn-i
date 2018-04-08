@@ -1,0 +1,36 @@
+.cta{
+  color: #fff;
+  flex: 1 1;
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  padding-top: 25vh;
+  align-items: center;
+  position: relative;
+  h1{
+    font-size: 5em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h2{
+    font-weight: 100;
+  }
+  a{
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    display:inline-block;
+    color: #fff;
+    font-size: 2em;
+    margin: 40px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: none;
+      background-color: white;
+      color: #2c3e50; // #e86767;
+    }
+  }
+}

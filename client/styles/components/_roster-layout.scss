@@ -1,0 +1,106 @@
+.roster-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .header {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex: 0 0 70px;
+    a.left, a.right {
+      align-self: center;
+      padding: 30px 15px;
+      display: block;
+      .fa {
+        font-size: 15px;
+        font-weight: 100;
+      }
+
+    }
+    .center {
+      flex: 0 1 100%;
+      text-align: center;
+
+      h1 {
+        color: $accent-color;
+        margin: 0px;
+        font-weight: 100;
+        padding-top: 7px;
+      }
+      h2 {
+        margin: 0px;
+        font-weight: 200;
+        font-size: 14px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        &.date-left-leave {
+          transition: all 200ms ease-in;
+          transform: translateX(0);
+
+        }
+        &.date-left-leave-active {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        &.date-left-enter {
+          transition: all 200ms ease-in;
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        &.date-left-enter-active {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        &.date-right-leave {
+          transition: all 200ms ease-in;
+          transform: translateX(0);
+
+        }
+        &.date-right-leave-active {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        &.date-right-enter {
+          transition: all 200ms ease-in;
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        &.date-right-enter-active {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+    .right {
+
+    }
+
+  }
+  .content {
+    flex: 1 1 100%;
+    //overflow: auto;
+    //overflow-y: auto;
+    position: relative;
+    &.loading {
+      text-align: center;
+      margin-top: 50%;
+      .fa {
+        font-size: 50px;
+        color: #969696;
+
+      }
+    }
+
+  }
+  .none {
+
+    margin: 100px 15px 15px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 50px;
+  }
+}
+

@@ -1,0 +1,134 @@
+.shifts {
+  height: calc(100vh - 70px - 50px);
+  position: relative;
+  overflow: hidden;
+  //& > * {
+  //  position: absolute;
+  //  z-index: 1;
+  //  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  //  width: 100%;
+  //  -webkit-transform: translateZ(0);
+  //  -moz-transform: translateZ(0);
+  //  -ms-transform: translateZ(0);
+  //  -o-transform: translateZ(0);
+  //  transform: translateZ(0);
+  //  -webkit-touch-callout: none;
+  //  -webkit-user-select: none;
+  //  -moz-user-select: none;
+  //  -ms-user-select: none;
+  //  user-select: none;
+  //  -webkit-text-size-adjust: none;
+  //  -moz-text-size-adjust: none;
+  //  -ms-text-size-adjust: none;
+  //  -o-text-size-adjust: none;
+  //  text-size-adjust: none;
+  //}
+  .shift-card-wrapper {
+    padding: 15px 15px 0px;
+    &:last-child {
+    padding-bottom: 15px;
+    }
+  }
+  .shift-card {
+    //margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    padding: 15px;
+    .customer {
+      font-weight: 500;
+      display: inline;
+      font-size: 1.2em;
+    }
+    .meta {
+      float: right;
+    }
+    .times {
+      p {
+        //display:inline;
+        margin: 0px;
+        padding: 0px;
+        span.time_label {
+          margin: 0px;
+          padding: 0px;
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+    .clockin {
+      width: 100%;
+      display: block;
+      margin-top: 15px;
+      button {
+        width: 100%;
+        transition: all 300ms ease-in;
+        transform: translateX(0);
+        background-color: $accent-color;
+        border-radius: 3px;
+        border: 0;
+        color: #fff;
+        padding: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0px;
+        outline: none;
+        &:active, &:focus {
+          outline: none;
+        }
+        &:hover {
+          background-color: darken($accent-color, 10%);
+        }
+        &.loading {
+          transform: translateX(200%);
+        }
+      }
+    }
+  }
+  &.shift-left-leave {
+    transition: all 200ms ease-in;
+    transform: translateX(0);
+    position: absolute;
+    left: 0;
+    right: 0;
+
+  }
+  &.shift-left-leave-active {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  &.shift-left-enter {
+    transition: all 200ms ease-in;
+    transform: translateX(-100%);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  &.shift-left-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  &.shift-right-leave {
+    transition: all 200ms ease-in;
+    transform: translateX(0);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  &.shift-right-leave-active {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  &.shift-right-enter {
+    transition: all 200ms ease-in;
+    transform: translateX(100%);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  &.shift-right-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
