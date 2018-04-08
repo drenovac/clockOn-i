@@ -1,0 +1,25 @@
+//@import "../helpers/colors";
+
+header {
+  color: $accent-color;
+  position: relative;
+  width: 1000px;
+  margin: auto;
+  a {
+    color: $accent-color;
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Amatic SC', cursive;
+      margin: 0;
+      padding: 20px 0;
+      span.muted {
+        color: #9a9da2;
+      }
+    }
+    &:hover{
+      color: $accent-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.roster-layout.manager-app{
+  .layout {
+    display: flex;
+    height: calc(100vh - 70px);
+    .main-block {
+      flex: 1;
+    }
+    .content{
+      height: 100%;
+      padding: 15px;
+    }
+  }
+  .header{
+    a.right, a.left{
+      i {
+        font-size: 2em;
+      }
+    }
+  }
+}

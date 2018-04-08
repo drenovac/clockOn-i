@@ -1,0 +1,17 @@
+.manager-app {
+  .sidebar {
+    width: 300px;
+    float: left;
+    display: none;
+    height: 100%;
+    padding: 15px;
+    position: relative;
+
+    z-index: 1;
+    h1{
+      color: #aaa;
+      font-weight: 100;
+      margin-top :10px;
+    }
+  }
+}

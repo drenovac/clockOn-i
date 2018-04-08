@@ -1,0 +1,33 @@
+.footer {
+  height: 50px;
+  padding: 0px;
+  position: absolute;
+  bottom:0px;
+  z-index: 50;
+  width: 100%;
+  .btn {
+    width: 50%;
+    transition: all 300ms ease-in;
+    transform: translateX(0);
+    background-color: $accent-color;
+    border-radius: 0px;
+    height: 51px;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 15px;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+    &.loading {
+      transform: translateX(200%);
+    }
+    &:first-child {
+      border-right: 1px solid #fff;
+    }
+  }
+}
+

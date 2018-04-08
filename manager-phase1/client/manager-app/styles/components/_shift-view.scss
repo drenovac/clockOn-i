@@ -1,0 +1,71 @@
+.manager-app {
+  .shift-view {
+    .title {
+      text-align: center;
+      margin: -15px;
+      margin-bottom: 15px;
+      color: #fff;
+      font-weight: 100;
+      font-size: 2em;
+      padding: 15px;
+      background-color: $accent-color;
+      .left{
+        float: left;
+        cursor: pointer;
+      }
+      .right{
+        float: right;
+        cursor: pointer;
+      }
+    }
+    .empty, .loading{
+      margin-top: 150px;
+      text-align: center;
+      font-size: 4em;
+      color:#aaa;
+      font-weight: 100;
+    }
+    table{
+      width:100%;
+      th{
+        font-weight: 200;
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 15px;
+      }
+      td{
+        font-weight: 200;
+        padding: 0px;
+        border: 1px solid #ddd;
+        vertical-align: top;
+        text-align: center;
+        &.employee{
+          vertical-align: middle;
+          padding: 15px;
+          text-align: left;
+        }
+        &.site{
+          text-align: left;
+          font-weight: 100;
+          padding-left:15px;
+          background-color: $accent-color;
+          color: #fff;
+          border-color: $accent-color;
+          font-size: 1.3em;
+
+        }
+        &.indent{
+          border-color: $accent-color;
+          width:1px;
+        }
+        .event{
+          background-color: #3174ad;
+          color: #fff;
+          margin:3px;
+          padding: 3px 5px;
+        }
+      }
+      
+    }
+  }
+}

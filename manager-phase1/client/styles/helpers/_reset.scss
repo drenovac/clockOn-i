@@ -1,0 +1,23 @@
+a{
+  &:active, &:visited, &:focus{
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+  }
+}
+
+::-webkit-input-placeholder {
+  font-weight: 100;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-weight: 100;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-weight: 100;
+}
+
+:-ms-input-placeholder {
+  font-weight: 100;
+}
